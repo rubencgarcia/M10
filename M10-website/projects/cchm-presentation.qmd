@@ -1,0 +1,8 @@
+---
+title: "CCHM Instagram Retention Presentation"
+description: "Revealjs presentation on enrollment and retention and Instagram Reels and Stories analytics."
+date: 2026-10-07
+categories: [Presentations, Social Media]
+---
+
+Project summary goes here.

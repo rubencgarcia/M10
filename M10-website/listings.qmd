@@ -1,0 +1,33 @@
+---
+title: "Listings in Quarto"
+listing:
+  contents: projects
+  type: grid
+  sort: "date desc"
+  categories: true
+  fields: [title, description, date, categories]
+---
+
+## What Are Listings?
+
+A **listing** automatically builds an index of pages (blog posts, projects, reports) from a folder, so I don't have to link each one by hand. Add a new `.qmd` file to the folder and it appears on the page.
+
+## How I Would Use It for My Portfolio
+
+- Show each class project as a card with a title, description, date, and category.
+- Filter by category (for example, Analytics or Presentations).
+- Keep my portfolio updated by only adding files.
+
+## The YAML That Powers This Page
+
+```yaml
+listing:
+  contents: projects
+  type: grid
+  sort: "date desc"
+  categories: true
+```
+
+## My Projects
+
+The cards below are generated from the files in the `projects` folder.

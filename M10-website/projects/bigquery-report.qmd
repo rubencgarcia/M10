@@ -1,0 +1,8 @@
+---
+title: "BigQuery Course Report"
+description: "Chapter notes, SQL examples, and a reflection on a DataCamp BigQuery course."
+date: 2026-10-03
+categories: [Analytics, SQL]
+---
+
+Project summary goes here.

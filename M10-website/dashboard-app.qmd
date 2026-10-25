@@ -1,0 +1,87 @@
+---
+title: "Culminating Experience Dashboard (Placeholder Data)"
+format: dashboard
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+library(dplyr)
+library(ggplot2)
+library(knitr)
+```
+
+```{r}
+#| label: step-1-build-data
+
+month_name <- c("Jan", "Feb", "Mar", "Apr", "May", "Jun")
+reel_views <- c(1200, 1500, 1800, 2400, 2600, 3100)
+story_views <- c(900, 1100, 1000, 1500, 1700, 1900)
+retention_rate <- c(0.71, 0.72, 0.74, 0.75, 0.77, 0.79)
+
+dashboard_data <- tibble(
+  month_name = factor(month_name, levels = month_name),
+  reel_views = reel_views,
+  story_views = story_views,
+  retention_rate = retention_rate
+)
+```
+
+```{r}
+#| label: step-2-summary-values
+
+total_reel_views <- dashboard_data |>
+  summarise(total_reel_views = sum(reel_views)) |>
+  pull(total_reel_views)
+
+total_story_views <- dashboard_data |>
+  summarise(total_story_views = sum(story_views)) |>
+  pull(total_story_views)
+
+latest_retention <- dashboard_data |>
+  slice_tail(n = 1) |>
+  pull(retention_rate)
+```
+
+## Row {height=20%}
+
+```{r}
+#| content: valuebox
+#| title: "Total Reel Views"
+
+list(icon = "play-circle", color = "primary", value = total_reel_views)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Total Story Views"
+
+list(icon = "eye", color = "info", value = total_story_views)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Latest Retention Rate"
+
+list(icon = "people", color = "success", value = scales::percent(latest_retention))
+```
+
+## Row {height=80%}
+
+```{r}
+#| title: "Reel Views by Month"
+
+reel_plot <- ggplot(data = dashboard_data, mapping = aes(x = month_name, y = reel_views, group = 1))
+reel_plot <- reel_plot + geom_line(color = "#1b6e5a", linewidth = 1.2)
+reel_plot <- reel_plot + geom_point(color = "#1b6e5a", size = 3)
+reel_plot <- reel_plot + labs(x = "Month", y = "Reel views")
+reel_plot <- reel_plot + theme_minimal()
+reel_plot
+```
+
+```{r}
+#| title: "Data Table"
+
+kable(dashboard_data)
+```

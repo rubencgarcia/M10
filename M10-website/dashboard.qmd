@@ -1,0 +1,22 @@
+---
+title: "MSDM Culminating Experience Project"
+---
+
+## What This Dashboard Helps You Understand
+
+This page is the entry point to the interactive dashboard for my MSDM Culminating Experience Project. Use it to see how enrollment and retention connect to social media engagement.
+
+::: {.callout-note}
+## Data note
+The dashboard currently uses **placeholder data** until my project data is final. Swap in the real data file in `dashboard-app.qmd` when it is ready.
+:::
+
+## Open the Dashboard
+
+[Launch the interactive dashboard](dashboard-app.qmd){.btn .btn-primary .btn-lg}
+
+## What You Will Find
+
+- **Key metrics** at a glance (value boxes)
+- **Trends over time** in engagement and retention
+- **A data table** you can scan and sort

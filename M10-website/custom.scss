@@ -1,0 +1,30 @@
+/*-- scss:defaults --*/
+$primary: #1b6e5a;
+$body-bg: #fbfaf7;
+$font-family-sans-serif: "Helvetica Neue", Arial, sans-serif;
+$headings-font-weight: 700;
+
+/*-- scss:rules --*/
+.hero {
+  background: linear-gradient(135deg, $primary, #4fb89c);
+  color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.profile-photo {
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  max-width: 100%;
+}
+
+.skill-badge {
+  display: inline-block;
+  background: $primary;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  margin: 0.2rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}

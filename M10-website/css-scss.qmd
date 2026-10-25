@@ -1,0 +1,58 @@
+---
+title: "Styling a Quarto Website with CSS/SCSS"
+---
+
+## Why Styling Matters to Your Readers
+
+Consistent colors, fonts, and spacing make a site feel trustworthy and easy to read. Quarto lets me start from a built-in Bootstrap theme and then customize it.
+
+## How I Applied It
+
+In `_quarto.yml`, I combined a built-in theme with my own SCSS file:
+
+```yaml
+format:
+  html:
+    theme: [cosmo, custom.scss]
+```
+
+## The Two SCSS Sections
+
+My `custom.scss` file has two sections:
+
+1. `/*-- scss:defaults --*/` changes Bootstrap **variables**, such as the primary color and font.
+2. `/*-- scss:rules --*/` adds **custom CSS rules** for specific classes.
+
+```scss
+/*-- scss:defaults --*/
+$primary: #1b6e5a;
+
+/*-- scss:rules --*/
+.skill-badge {
+  background: $primary;
+  color: white;
+  border-radius: 999px;
+}
+```
+
+## Using a Custom Class in a Page
+
+Quarto's bracketed spans attach a CSS class to inline text. This is how the skill badges on my [home page](index.qmd) are styled:
+
+```markdown
+[Team Leadership]{.skill-badge}
+```
+
+## Live Example
+
+::: {.hero}
+This banner is styled by the `.hero` rule in my SCSS file.
+:::
+
+Here is the result: [Team Leadership]{.skill-badge} [Google Workspace]{.skill-badge}
+
+## What I Learned
+
+- Variables in `scss:defaults` change the whole site at once.
+- Rules in `scss:rules` target individual elements.
+- Using a variable like `$primary` in a rule keeps the design consistent.

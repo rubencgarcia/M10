@@ -1,0 +1,15 @@
+---
+title: "M10 Hands-on Practice: Submission"
+author: "Ruben Garcia"
+format:
+  html:
+    toc: true
+---
+
+## My Website
+
+[View my published website on GitHub Pages](https://YOUR-USERNAME.github.io/YOUR-REPO/){target="_blank"}
+
+## My GitHub Repository
+
+[View all project files on GitHub](https://github.com/YOUR-USERNAME/YOUR-REPO){target="_blank"}

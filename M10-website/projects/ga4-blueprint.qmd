@@ -1,0 +1,8 @@
+---
+title: "GA4 Analytics Blueprint"
+description: "KPI tree, event parameter map, and validation checklist for a measurement plan."
+date: 2026-10-11
+categories: [Analytics, GA4]
+---
+
+Project summary goes here.

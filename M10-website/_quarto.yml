@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Ruben Garcia"
+  favicon: images/ruben.jpeg
+  navbar:
+    background: primary
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Dashboard"
+        href: dashboard.qmd
+      - text: "Styling with CSS/SCSS"
+        href: css-scss.qmd
+      - text: "Listings"
+        href: listings.qmd
+  page-footer: "© 2026 Ruben Garcia | MS Digital Marketing, Cal Poly Pomona"
+
+format:
+  html:
+    theme: [cosmo, custom.scss]
+    toc: true
+    code-fold: true
+    code-tools: true
