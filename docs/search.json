@@ -1,5 +1,166 @@
 [
   {
+    "objectID": "css-scss.html",
+    "href": "css-scss.html",
+    "title": "Styling a Quarto Website with CSS/SCSS",
+    "section": "",
+    "text": "Consistent colors, fonts, and spacing make a site feel trustworthy and easy to read. Quarto lets me start from a built-in Bootstrap theme and then customize it."
+  },
+  {
+    "objectID": "css-scss.html#why-styling-matters-to-your-readers",
+    "href": "css-scss.html#why-styling-matters-to-your-readers",
+    "title": "Styling a Quarto Website with CSS/SCSS",
+    "section": "",
+    "text": "Consistent colors, fonts, and spacing make a site feel trustworthy and easy to read. Quarto lets me start from a built-in Bootstrap theme and then customize it."
+  },
+  {
+    "objectID": "css-scss.html#how-i-applied-it",
+    "href": "css-scss.html#how-i-applied-it",
+    "title": "Styling a Quarto Website with CSS/SCSS",
+    "section": "How I Applied It",
+    "text": "How I Applied It\nIn _quarto.yml, I combined a built-in theme with my own SCSS file:\nformat:\n  html:\n    theme: [cosmo, custom.scss]"
+  },
+  {
+    "objectID": "css-scss.html#the-two-scss-sections",
+    "href": "css-scss.html#the-two-scss-sections",
+    "title": "Styling a Quarto Website with CSS/SCSS",
+    "section": "The Two SCSS Sections",
+    "text": "The Two SCSS Sections\nMy custom.scss file has two sections:\n\n/*-- scss:defaults --*/ changes Bootstrap variables, such as the primary color and font.\n/*-- scss:rules --*/ adds custom CSS rules for specific classes.\n\n/*-- scss:defaults --*/\n$primary: #1b6e5a;\n\n/*-- scss:rules --*/\n.skill-badge {\n  background: $primary;\n  color: white;\n  border-radius: 999px;\n}"
+  },
+  {
+    "objectID": "css-scss.html#using-a-custom-class-in-a-page",
+    "href": "css-scss.html#using-a-custom-class-in-a-page",
+    "title": "Styling a Quarto Website with CSS/SCSS",
+    "section": "Using a Custom Class in a Page",
+    "text": "Using a Custom Class in a Page\nQuarto’s bracketed spans attach a CSS class to inline text. This is how the skill badges on my home page are styled:\n[Team Leadership]{.skill-badge}"
+  },
+  {
+    "objectID": "css-scss.html#live-example",
+    "href": "css-scss.html#live-example",
+    "title": "Styling a Quarto Website with CSS/SCSS",
+    "section": "Live Example",
+    "text": "Live Example\n\nThis banner is styled by the .hero rule in my SCSS file.\n\nHere is the result: Team Leadership Google Workspace"
+  },
+  {
+    "objectID": "css-scss.html#what-i-learned",
+    "href": "css-scss.html#what-i-learned",
+    "title": "Styling a Quarto Website with CSS/SCSS",
+    "section": "What I Learned",
+    "text": "What I Learned\n\nVariables in scss:defaults change the whole site at once.\nRules in scss:rules target individual elements.\nUsing a variable like $primary in a rule keeps the design consistent."
+  },
+  {
+    "objectID": "Garcia, Ruben_M10.html",
+    "href": "Garcia, Ruben_M10.html",
+    "title": "Ruben Garcia",
+    "section": "",
+    "text": "Marketing ideas and products through a positive lens."
+  },
+  {
+    "objectID": "Garcia, Ruben_M10.html#about-me",
+    "href": "Garcia, Ruben_M10.html#about-me",
+    "title": "Ruben Garcia",
+    "section": "About Me",
+    "text": "About Me\nI am a results-driven professional with 8+ years of experience leading customer engagement, brand promotion, team development, and data-driven strategy in high-volume retail and educational settings. I am pursuing an MS in Digital Marketing at Cal Poly Pomona (expected Summer 2027) to move from an anthropology background into marketing.\nMy biggest philosophy is the power of positive psychology: marketing ideas and products through a positive lens. Outside of school, I enjoy dancing, music, movies, League of Legends, and Pokémon."
+  },
+  {
+    "objectID": "Garcia, Ruben_M10.html#career-aspirations",
+    "href": "Garcia, Ruben_M10.html#career-aspirations",
+    "title": "Ruben Garcia",
+    "section": "Career Aspirations",
+    "text": "Career Aspirations\nI want to market for:\n\nNon-profit organizations\nUniversity systems\nMusic and dance festivals across the globe"
+  },
+  {
+    "objectID": "Garcia, Ruben_M10.html#skills",
+    "href": "Garcia, Ruben_M10.html#skills",
+    "title": "Ruben Garcia",
+    "section": "Skills",
+    "text": "Skills\nMarketing\nDigital Marketing Strategy Campaign Coordination Brand Development Social Media Communication Content Development Public Relations Consumer Engagement\nAnalytics & Tools\nKPI & Data Analysis Performance Reporting Google Workspace Microsoft Excel Quarto & R\nLeadership\nTeam Leadership Community Outreach Cross-Functional Collaboration"
+  },
+  {
+    "objectID": "Garcia, Ruben_M10.html#experience",
+    "href": "Garcia, Ruben_M10.html#experience",
+    "title": "Ruben Garcia",
+    "section": "Experience",
+    "text": "Experience\n\nOperational and Sales Growth Manager, Lush Cosmetics (2018–Present)\n\nLead customer engagement and brand experience strategy in a high-volume retail store generating over $2M annually.\nAnalyze sales trends, KPIs, and customer behavior to find growth opportunities.\nDevelop promotions that increase customer retention, product awareness, and sales.\nCoach and train a team of 10+ employees on brand storytelling and experiential selling.\n\n\n\nDirector of Education and Outreach, Diamond Bar High School (2021–Present)\n\nDirect outreach, recruitment, and community engagement for a competitive performing arts program serving 100+ students.\nManage social promotions, events, and fundraising campaigns generating over $50,000 annually.\nCoordinate branded performances and public events that increase community awareness and support.\n\n\n\nColor Guard and Flag Team Instructor (15+ years)\n\nEl Capitan High School: Scholastic Open finalist, 2019\nDiamond Bar High School: Scholastic A finalist, 2026"
+  },
+  {
+    "objectID": "Garcia, Ruben_M10.html#education",
+    "href": "Garcia, Ruben_M10.html#education",
+    "title": "Ruben Garcia",
+    "section": "Education",
+    "text": "Education\n\n\n\n\n\n\n\n\nDegree\nSchool\nYear\n\n\n\n\nMS, Digital Marketing\nCal Poly Pomona\nExpected Summer 2027\n\n\nBA, Anthropology (minor in Psychology)\nUniversity of California, Merced\n2015"
+  },
+  {
+    "objectID": "projects/cchm-presentation.html",
+    "href": "projects/cchm-presentation.html",
+    "title": "CCHM Instagram Retention Presentation",
+    "section": "",
+    "text": "Project summary goes here."
+  },
+  {
+    "objectID": "dashboard.html",
+    "href": "dashboard.html",
+    "title": "MSDM Culminating Experience Project",
+    "section": "",
+    "text": "This page is the entry point to the interactive dashboard for my MSDM Culminating Experience Project. Use it to see how enrollment and retention connect to social media engagement.\n\n\n\n\n\n\nNoteData note\n\n\n\nThe dashboard currently uses placeholder data until my project data is final. Swap in the real data file in dashboard-app.qmd when it is ready."
+  },
+  {
+    "objectID": "dashboard.html#what-this-dashboard-helps-you-understand",
+    "href": "dashboard.html#what-this-dashboard-helps-you-understand",
+    "title": "MSDM Culminating Experience Project",
+    "section": "",
+    "text": "This page is the entry point to the interactive dashboard for my MSDM Culminating Experience Project. Use it to see how enrollment and retention connect to social media engagement.\n\n\n\n\n\n\nNoteData note\n\n\n\nThe dashboard currently uses placeholder data until my project data is final. Swap in the real data file in dashboard-app.qmd when it is ready."
+  },
+  {
+    "objectID": "dashboard.html#open-the-dashboard",
+    "href": "dashboard.html#open-the-dashboard",
+    "title": "MSDM Culminating Experience Project",
+    "section": "Open the Dashboard",
+    "text": "Open the Dashboard\nLaunch the interactive dashboard"
+  },
+  {
+    "objectID": "dashboard.html#what-you-will-find",
+    "href": "dashboard.html#what-you-will-find",
+    "title": "MSDM Culminating Experience Project",
+    "section": "What You Will Find",
+    "text": "What You Will Find\n\nKey metrics at a glance (value boxes)\nTrends over time in engagement and retention\nA data table you can scan and sort"
+  },
+  {
+    "objectID": "M10-submission.html",
+    "href": "M10-submission.html",
+    "title": "M10 Hands-on Practice: Submission",
+    "section": "",
+    "text": "View my published website on GitHub Pages"
+  },
+  {
+    "objectID": "M10-submission.html#my-website",
+    "href": "M10-submission.html#my-website",
+    "title": "M10 Hands-on Practice: Submission",
+    "section": "",
+    "text": "View my published website on GitHub Pages"
+  },
+  {
+    "objectID": "M10-submission.html#my-github-repository",
+    "href": "M10-submission.html#my-github-repository",
+    "title": "M10 Hands-on Practice: Submission",
+    "section": "My GitHub Repository",
+    "text": "My GitHub Repository\nView all project files on GitHub"
+  },
+  {
+    "objectID": "projects/ga4-blueprint.html",
+    "href": "projects/ga4-blueprint.html",
+    "title": "GA4 Analytics Blueprint",
+    "section": "",
+    "text": "Project summary goes here."
+  },
+  {
+    "objectID": "projects/bigquery-report.html",
+    "href": "projects/bigquery-report.html",
+    "title": "BigQuery Course Report",
+    "section": "",
+    "text": "Project summary goes here."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Ruben Garcia",
@@ -40,5 +201,40 @@
     "title": "Ruben Garcia",
     "section": "Education",
     "text": "Education\n\n\n\n\n\n\n\n\nDegree\nSchool\nYear\n\n\n\n\nMS, Digital Marketing\nCal Poly Pomona\nExpected Summer 2027\n\n\nBA, Anthropology (minor in Psychology)\nUniversity of California, Merced\n2015"
+  },
+  {
+    "objectID": "listings.html",
+    "href": "listings.html",
+    "title": "Listings in Quarto",
+    "section": "",
+    "text": "A listing automatically builds an index of pages (blog posts, projects, reports) from a folder, so I don’t have to link each one by hand. Add a new .qmd file to the folder and it appears on the page."
+  },
+  {
+    "objectID": "listings.html#what-are-listings",
+    "href": "listings.html#what-are-listings",
+    "title": "Listings in Quarto",
+    "section": "",
+    "text": "A listing automatically builds an index of pages (blog posts, projects, reports) from a folder, so I don’t have to link each one by hand. Add a new .qmd file to the folder and it appears on the page."
+  },
+  {
+    "objectID": "listings.html#how-i-would-use-it-for-my-portfolio",
+    "href": "listings.html#how-i-would-use-it-for-my-portfolio",
+    "title": "Listings in Quarto",
+    "section": "How I Would Use It for My Portfolio",
+    "text": "How I Would Use It for My Portfolio\n\nShow each class project as a card with a title, description, date, and category.\nFilter by category (for example, Analytics or Presentations).\nKeep my portfolio updated by only adding files."
+  },
+  {
+    "objectID": "listings.html#the-yaml-that-powers-this-page",
+    "href": "listings.html#the-yaml-that-powers-this-page",
+    "title": "Listings in Quarto",
+    "section": "The YAML That Powers This Page",
+    "text": "The YAML That Powers This Page\nlisting:\n  contents: projects\n  type: grid\n  sort: \"date desc\"\n  categories: true"
+  },
+  {
+    "objectID": "listings.html#my-projects",
+    "href": "listings.html#my-projects",
+    "title": "Listings in Quarto",
+    "section": "My Projects",
+    "text": "My Projects\nThe cards below are generated from the files in the projects folder."
   }
 ]
